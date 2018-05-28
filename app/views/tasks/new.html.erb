@@ -1,0 +1,16 @@
+
+
+<%= form_for(@task, :as => :task, :url => tasks_path) do |t| %>
+
+  <%= t.label :title %>
+  <%= t.text_field :title %>
+
+
+  <%= t.label :details %>
+  <%= t.text_field :details  %>
+
+  <%= t.check_box :completed %>
+
+  <%= t.submit %>
+
+<% end %>
